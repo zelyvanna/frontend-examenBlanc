@@ -1,0 +1,54 @@
+// Gestion de divs Ronds / "Points
+
+.slider-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #b9eced;
+  border-radius: 25px;
+  margin-right: 2px;
+  display: inline-block;
+
+  &:hover {
+    background-color: dodgerblue;
+  }
+
+  &--active {
+    background-color: white;
+  }
+}
+
+
+.color-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #b9eced;
+  border-radius: 25px;
+  margin-right: 2px;
+  display: inline-block;
+
+  &:hover {
+    box-shadow: #9b74ff 0 0 20px 3px;
+  }
+
+  &--active {
+    box-shadow: #30c8ca 0 0 20px 3px;
+  }
+
+  &--blue {
+    background-color: #30c8ca;
+  }
+
+  &--grey {
+    background-color: #a3a3a3;
+  }
+
+  &--pink {
+    background-color: #fa63a7;
+  }
+}
+
+//Container des dots de couleurs
+.color-dots {
+  float: right;
+  padding-top: 15px;
+}

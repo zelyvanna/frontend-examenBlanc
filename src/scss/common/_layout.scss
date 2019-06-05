@@ -1,0 +1,178 @@
+// Layout principal
+body{
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: 700;
+
+  margin: 0;
+
+  //Gradient background
+  @include gradient-top(#a3e5e8,#30b3b6);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// Classe générique pour appliquer un float rapidement
+.float{
+  &--left{
+    float: left;
+  }
+
+  &--right{
+    float: right;
+  }
+}
+
+// Logo nike du header
+#logo-header{
+  width: 100px;
+  height: auto;
+}
+
+header{
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-right: 15px;
+}
+
+//Marque + nom du produit
+#product-name{
+  padding-left: 15px;
+  margin-top: 70px;text-align: left;
+}
+
+
+h1{
+  text-align: left;
+  margin-bottom: 0;
+  color: white;
+}
+
+h2{
+  text-align: left;
+  margin-top: 0;
+  color: white;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.main-container{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 15px;
+  background-color: white;
+  padding-right: 15px;
+}
+
+p{
+  color: grey;
+  font-size:15pt;
+  font-weight: normal;
+}
+
+#price{
+  display: inline-block;
+  font-size: 32px;
+}
+
+#price-digits{
+  font-size: 15px;
+}
+
+h3{
+  font-size:15px;
+  margin-bottom: 5px;
+}
+
+.size{
+  @include unlist();
+  margin-bottom: 35px;
+  li{
+    margin-right: 15px;
+    display: inline-flex;
+    color: gray;
+    &:hover{
+      color: black;
+    }
+    &.active{
+      color: black;
+    }
+  }
+}
+
+#img-product {
+  height: 150px;
+  transform: scaleX(-1);
+  margin-top: -100px;
+
+  &:hover {
+    transform: scaleX(1);
+
+  }
+}
+
+#img-container{
+  text-align: center;
+}
+
+// Partie gestion media => Paysage
+@media (min-width: 600px) {
+  #product-name{
+    margin-top: 125px;
+  }
+  .slider-dot{
+    margin-top: 15px;
+  }
+
+  .main-container{
+    right: 0;
+    width: 50%;
+    padding-left: 50px;
+  }
+
+  #img-container{
+    position: fixed;
+    left: 100px;
+    bottom: 10px;
+  }
+
+  #img-product{
+    height: 175px;
+  }
+
+  .size-container{
+    text-align: right;
+  }
+
+  #price{
+    float: right;
+  }
+
+  .color-dots{
+    float: left;
+    margin-left: 150px;
+  }
+
+  p{
+    display: none;
+  }
+
+  .price-color-container{
+    margin-bottom: 100px;
+    padding-top:30px;
+  }
+
+  .size{
+    li{
+      margin-right: 0px;
+      margin-left: 15px;
+    }
+  }
+
+  .buttons{
+    width: auto;
+    margin-left: 150px;
+  }
+}

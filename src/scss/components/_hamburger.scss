@@ -1,0 +1,16 @@
+// Menu hamburger
+
+.hamburger {
+  background-color: white;
+  height: 4px;
+  border-radius: 50px;
+
+  &--big-bar {
+    width: 50px;
+  }
+
+  &--small-bar {
+    margin-top: 5px;
+    width: 15px;
+  }
+}

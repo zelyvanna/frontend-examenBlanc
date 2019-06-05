@@ -1,0 +1,195 @@
+/* Commons */
+/* Components */
+.hamburger {
+  background-color: white;
+  height: 4px;
+  border-radius: 50px; }
+  .hamburger--big-bar {
+    width: 50px; }
+  .hamburger--small-bar {
+    margin-top: 5px;
+    width: 15px; }
+
+.slider-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #b9eced;
+  border-radius: 25px;
+  margin-right: 2px;
+  display: inline-block; }
+  .slider-dot:hover {
+    background-color: dodgerblue; }
+  .slider-dot--active {
+    background-color: white; }
+
+.color-dot {
+  height: 15px;
+  width: 15px;
+  background-color: #b9eced;
+  border-radius: 25px;
+  margin-right: 2px;
+  display: inline-block; }
+  .color-dot:hover {
+    -webkit-box-shadow: #9b74ff 0 0 20px 3px;
+    box-shadow: #9b74ff 0 0 20px 3px; }
+  .color-dot--active {
+    -webkit-box-shadow: #30c8ca 0 0 20px 3px;
+    box-shadow: #30c8ca 0 0 20px 3px; }
+  .color-dot--blue {
+    background-color: #30c8ca; }
+  .color-dot--grey {
+    background-color: #a3a3a3; }
+  .color-dot--pink {
+    background-color: #fa63a7; }
+
+.color-dots {
+  float: right;
+  padding-top: 15px; }
+
+.buttons {
+  text-align: center;
+  color: white;
+  background: -moz-linear-gradient(45deg, #30c8ca 0%, #304dca 100%);
+  background: -webkit-linear-gradient(45deg, #30c8ca 0%, #304dca 100%);
+  background: -o-linear-gradient(45deg, #30c8ca 0%, #304dca 100%);
+  background: linear-gradient(45deg, #30c8ca 0%, #304dca 100%);
+  border-radius: 10px;
+  padding: 15px;
+  width: 75%;
+  margin: 15px auto; }
+
+/* Layout */
+body {
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: 700;
+  margin: 0;
+  background: -moz-linear-gradient(to top, #a3e5e8 0%, #30b3b6 100%);
+  background: -webkit-linear-gradient(to top, #a3e5e8 0%, #30b3b6 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a3e5e8), to(#30b3b6));
+  background: -webkit-linear-gradient(bottom, #a3e5e8 0%, #30b3b6 100%);
+  background: -o-linear-gradient(bottom, #a3e5e8 0%, #30b3b6 100%);
+  background: linear-gradient(to top, #a3e5e8 0%, #30b3b6 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.float--left {
+  float: left; }
+
+.float--right {
+  float: right; }
+
+#logo-header {
+  width: 100px;
+  height: auto; }
+
+header {
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-right: 15px; }
+
+#product-name {
+  padding-left: 15px;
+  margin-top: 70px;
+  text-align: left; }
+
+h1 {
+  text-align: left;
+  margin-bottom: 0;
+  color: white; }
+
+h2 {
+  text-align: left;
+  margin-top: 0;
+  color: white;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 1px; }
+
+.main-container {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: fixed;
+  bottom: 0;
+  padding-left: 15px;
+  background-color: white;
+  padding-right: 15px; }
+
+p {
+  color: grey;
+  font-size: 15pt;
+  font-weight: normal; }
+
+#price {
+  display: inline-block;
+  font-size: 32px; }
+
+#price-digits {
+  font-size: 15px; }
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px; }
+
+.size {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px; }
+  .size li {
+    margin-right: 15px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: gray; }
+    .size li:hover {
+      color: black; }
+    .size li.active {
+      color: black; }
+
+#img-product {
+  height: 150px;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-top: -100px; }
+  #img-product:hover {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1); }
+
+#img-container {
+  text-align: center; }
+
+@media (min-width: 600px) {
+  #product-name {
+    margin-top: 125px; }
+  .slider-dot {
+    margin-top: 15px; }
+  .main-container {
+    right: 0;
+    width: 50%;
+    padding-left: 50px; }
+  #img-container {
+    position: fixed;
+    left: 100px;
+    bottom: 10px; }
+  #img-product {
+    height: 175px; }
+  .size-container {
+    text-align: right; }
+  #price {
+    float: right; }
+  .color-dots {
+    float: left;
+    margin-left: 150px; }
+  p {
+    display: none; }
+  .price-color-container {
+    margin-bottom: 100px;
+    padding-top: 30px; }
+  .size li {
+    margin-right: 0px;
+    margin-left: 15px; }
+  .buttons {
+    width: auto;
+    margin-left: 150px; } }
